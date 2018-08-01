@@ -176,7 +176,7 @@
         I have put on the Egyptians; for I, the Lord, am your healer.”
 
         <sup hidden>27</sup>Then they came to Elim where there were twelve springs of water and seventy date palms, and they camped there
-        beside the waters.
+        beside the <span id="end">waters</span>.
     </div>
     <p>
         <strong>Message:</strong>
@@ -192,6 +192,9 @@
         $("sup").each(function(index) {
             $(this).delay(2000*index).fadeIn(300);
         });
+        $("sup").on("click", function(){
+            $("body").text('answer')
+        })
     </script>
 </body>
 
